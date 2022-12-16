@@ -454,19 +454,19 @@ img {
 }
 
 .icon-antenna::before {
-  background-image: url(../img/bg-antenna.svg);
+  background-image: url(../img/feature/bg-antenna.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../img/bg-clock.svg);
+  background-image: url(../img/feature/bg-clock.svg);
 }
 
 .icon-diagram::before {
-  background-image: url(../img/bg-diagram.svg);
+  background-image: url(../img/feature/bg-diagram.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(../img/bg-astronaut.svg);
+  background-image: url(../img/feature/bg-astronaut.svg);
 }
 
 .feature-item__title {
@@ -1382,7 +1382,7 @@ input:focus {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--accent-text-color);
 }
 
 .menu-container {
@@ -1392,7 +1392,7 @@ input:focus {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: var(--white-text-color);
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1411,18 +1411,77 @@ input:focus {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--primery-text-color);
 }
 
-.mobile-menu {
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: var(--accent-text-color);
+}
+
+.mobile-menu,
+.mobile-contacts,
+.mobile-social {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
+.mobile-contacts {
+  margin-top: 302px;
+}
+
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: var(--primery-text-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 1.17;
+}
+
+.mobile-menu .link:hover,
+.mobile-menu .link:focus {
+  color: var(--accent-text-color);
+}
+
+.link-tel {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 1.25;
+  color: var(--accent-text-color);
+}
+
+.link-mail {
+  margin: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--secondery-text-color);
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1.2;
+  color: var(--accent-text-color);
+}
+
+.link-social {
+  border: 1px solid var(--secondery-text-color);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
