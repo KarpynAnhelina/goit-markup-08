@@ -1,28 +1,61 @@
 .hero {
-    margin: auto;
-    padding: 200px 0;
-    text-align: center;
-    max-width: 1600px;
-    max-height: 600px;
-    color: var(--white-text-color);
-    background-color: #c4c4c4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../img/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
+  margin: auto;
+  padding: 118px 0;
+  text-align: center;
+  max-width: 1600px;
+  max-height: 600px;
+  color: var(--white-text-color);
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+  // phone screen
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero/Hero_sm@1x.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/hero/Hero_sm@2x.jpg);
+  }
+  //tablet
+@media screen and(min-width: 768px){
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/hero/Hero_md@1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/hero/Hero_md@2x.jpg);
+        }
+    }
+    //DESCTOP
+ @media screen and(min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../img/hero/hero_lg@1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+         background-image: url(../img/hero/Hero_lg@2x.jpg);
+         }
+  }
+}
 .hero__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 360px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+@media screen and(min-width:1200px) {
     width: 696px;
-    font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    line-height: 1.36;}
 }

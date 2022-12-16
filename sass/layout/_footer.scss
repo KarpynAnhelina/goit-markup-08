@@ -1,25 +1,47 @@
 /* footer-підвал */
 .footer__logo {
+justify-content: center;
     color: var(--accent-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     text-decoration: none;
+
+
+    @media screen and (min-width: 768px) {
+    font-size: 26px;
+    }
 }
 
 .footer__studio {
     color: var(--white-text-color);
 }
 
-.footer {
+.container.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     color: var(--white-text-color);
     background-color: var(--secondery-background-color);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:60px;
+    @media screen and(min-width:768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    }
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+align-items: center;
 }
 
 .address {
     margin-top: 20px;
+    text-align: center;
 }
 
 .address__link {
@@ -28,8 +50,7 @@
     line-height: 1.7;
     font-style: normal;
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .address__link:hover,
 .address__link:focus {
@@ -37,7 +58,10 @@
 }
 
 .address-list__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and(min-width: 1200px) {
+            margin-bottom: 9px;
+    }
 }
 
 .address-list:last-child {
@@ -61,8 +85,14 @@
 }
 
 .social {
+    margin: 0;
     display: block;
-    margin-left: 70px;
+    text-align: center;
+    @media screen and(min-width:1200px) {
+     margin-left: 70px;
+    text-align: start;
+    }
+
 }
 
 .social__tittle {
@@ -82,20 +112,37 @@
     text-transform: uppercase;
     color: var(--white-text-color);
     margin-bottom: 20px;
+    text-align: center;
+        @media screen and(min-width:1200px) {
+
+            text-align: start;
+        }
+
 }
 
 .form-footer {
     display: flex;
+   flex-direction: column;
+  align-items: center;
+  @media screen and(min-width:1200px) {
+    flex-direction: row;
+  }
 }
 
 .form-footer__input {
-    width: 358px;
+    width: 450px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: var(--secondery-background-color);
-    margin-right: 10px;
-    padding-left: 16px;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 16px;
     color: var(--white-text-color);
+
+    @media screen and(min-width:1200px) {
+        width: 358px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
 }
 
 .icon-submit-footer {
@@ -107,6 +154,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 200px;
     padding: 10px 28px;
     background: var(--accent-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

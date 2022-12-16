@@ -1,127 +1,116 @@
 .header__logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    color: var(--accent-text-color);
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2;
-    text-decoration: none;
-@media screen and(min-width:1200px) {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: var(--accent-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-decoration: none;
+  @media screen and(min-width:1200px) {
     padding-top: 26px;
-        padding-bottom: 26px;
-        font-size: 26px;
+    padding-bottom: 26px;
+    font-size: 26px;
+  }
 }
-}
- 
+
 .header__logo-studio {
-    color: var(--primery-text-color);
+  color: var(--primery-text-color);
 }
 
 .header {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 /* NAVIGATION */
 .header__nav-page {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header__nav-list {
-display: flex;
-margin-left: 93px;
-@media screen and (max-width:767px) {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
     display: none;
-}
+  }
 }
 
 .nav-wrap__item {
-    margin-left: 50px;
-    position: relative;
+  margin-left: 50px;
+  position: relative;
 }
 
 .nav-wrap__link {
-    display: block;
-    padding: 32px 0;
-    color: var(--primery-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  padding: 32px 0;
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-wrap__link:hover,
 .nav-wrap__link:focus {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 .nav-wrap__link.current {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 .nav-wrap__link.current::after {
-    position: absolute;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-text-color);
-    bottom: -1px;
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
+  bottom: -1px;
 }
 /* CONTACTS */
 .contact-wrap {
+  display: none;
+
+  @media screen and(min-width:768px) {
     display: flex;
-    margin-left: auto;
-    @media screen and(max-width: 767px) {
-     display: none;
-    }
+    flex-direction: column;
+        outline: 2px solid blue;
+  }
+  @media screen and(min-width:1200px) {
+    flex-direction:row;
+    align-items: center;
+  }
 }
-
 .contact-wrap:first-child {
-    margin-left: 50px;
+  margin-left: 50px;
 }
-
 .contact-wrap__link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--secondery-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 1.15;
-    text-decoration: none;
-    font-style: normal;
-    margin-right: 30px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--secondery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  font-style: normal;
+  margin-right: 30px;
+    @media screen and(min-width:768px) and(max-width: 1199px) {
+            font-size: 12px;
+            line-height: 14px;
+            margin-right: 0%;
+        }
 }
 
 .contact-wrap__link:hover,
 .contact-wrap__link:focus {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 .icon-mail,
 .icon-smartphone {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-// Menu
-.menu-button{
-    margin: 0;
-    padding: 0;
-    border: none;
-@media screen and (min-width:768px) {
-    display: none;
-}
-}
-.menu-button .icon_close{
-    display: none;
-}
-.menu-button.is-open .icon_close{
-    display: block;
-}
-.menu-button.is-open .icon_open{
-    display: none;
-}
+  fill: currentColor;
+  margin-right: 10px;
+  }
