@@ -34,11 +34,11 @@
     //DESCTOP
  @media screen and(min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../img/hero/hero_lg@1x.jpg);
+    url(../img/hero/hero_lg@1x.jpg);
     @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-         background-image: url(../img/hero/Hero_lg@2x.jpg);
+         background-image: url(../img/hero/hero_lg@2x.jpg);
          }
   }
 }
