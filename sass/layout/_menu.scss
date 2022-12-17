@@ -49,6 +49,8 @@ color: var(--accent-text-color);
 }
 
 .menu-container {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -83,9 +85,6 @@ color: var(--accent-text-color);
     padding: 0;
     margin: 0;
     list-style: none;
-}
-.mobile-contacts{
-    margin-top: 302px;
 }
 
 .mobile-menu .link{
