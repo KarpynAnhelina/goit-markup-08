@@ -35,8 +35,10 @@ text-align: center;
 }
 .customers__item {
  border-radius: 4px;
+height: 92px;
+@media screen and(min-width: 1200px) {
 width: 170px;
-height: 92px;}
+}}
 
 .customers__link {
     border: 1px solid #afb1b8;

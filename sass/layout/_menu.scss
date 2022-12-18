@@ -1,8 +1,9 @@
 .menu {
     display: flex;
+    flex-direction: column;
     padding: 0;
-    margin: 0;
     list-style: none;
+    width:480px;
 }
 
 @media (max-width: 767px) {
@@ -56,7 +57,7 @@ color: var(--accent-text-color);
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+    padding: 48px 40px;
     background-color: var(--white-text-color);
     z-index: 999;
 
@@ -79,14 +80,20 @@ color: var(--accent-text-color);
     color: var(--accent-text-color);
 }
 
-.mobile-menu,
-.mobile-contacts,
+.mobile-menu, 
 .mobile-social {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
+.menu-contacts{
+margin-top: auto;
+}
+.menu-contacts_list{
+padding: 0;
+margin-bottom: 64px;
+list-style: none;
+}
 .mobile-menu .link{
     display: block;
     padding: 10px;
@@ -102,16 +109,15 @@ color: var(--accent-text-color);
     color: var(--accent-text-color);
 }
 .link-tel{
-    padding: 10px;
     text-decoration: none;
    font-weight: 500;
     font-size: 34px;
+    margin: 32px 0;
     line-height: 40px;
     letter-spacing: 1.25;
     color: var(--accent-text-color);
 }
 .link-mail{
-margin: 32px;
     text-decoration: none;
     font-weight: 500;
     font-size: 24px;
@@ -128,7 +134,7 @@ margin: 32px;
     color: var(--accent-text-color);
  
 }
-.link-social{
+.underline{
 border: 1px solid var(--secondery-text-color);
- transform: rotate(90deg);
+margin-right: 10px;;
  }
