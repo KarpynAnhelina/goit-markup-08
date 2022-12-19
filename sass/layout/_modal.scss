@@ -9,6 +9,7 @@
 
 .modal {
 width: calc(100% - 30px);
+max-width: 450px;
     height: 609px;
     position: absolute;
     max-height: 90vh;
@@ -19,9 +20,9 @@ width: calc(100% - 30px);
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
-    @media screen and(min-width:450px) {
-        width:auto;
-    }
+    // @media screen and(min-width:450px) {
+    //     width:auto;
+    // }
 
 }
 
@@ -115,7 +116,8 @@ input:focus {
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-    width: 370px;
+    max-width: 448px;
+    width: 100%;
     height: 138px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -123,13 +125,11 @@ input:focus {
     margin-bottom: 20px;
     padding: 12px 16px;
 
-    @media screen and(min-width:1200px) {
-        width: 448px;
-    }
 }
 
 .modal-textarea:focus {
     outline: 1px solid var(--accent-text-color);
+
 }
 
 .checkbox {
@@ -168,4 +168,8 @@ input:focus {
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
+}
+.filling-form{
+    max-width: 450px;
+    width:100%;
 }

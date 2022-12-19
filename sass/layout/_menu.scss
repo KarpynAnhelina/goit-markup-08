@@ -136,10 +136,11 @@ list-style: none;
     letter-spacing: 1.2;
     color: var(--accent-text-color);
     @media screen and(max-width:449px) {
-            font-size: 14px;
+            font-size: 12px;
     }
 }
 .underline{
 border: 1px solid var(--secondery-text-color);
-margin-right: 10px;;
+margin-right: 10px;
+margin-left: 10px;
  }
